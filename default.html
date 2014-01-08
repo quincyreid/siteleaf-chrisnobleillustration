@@ -33,7 +33,7 @@
         <div id="Projects">
           {% for post in site.posts %}
           <div class="project">
-            <a href="{{asset.permalink}}" title="my caption">{{post.title}}</a>
+            <a href="{{post.asset.url}}" title="{{post.title}}">{{post.title}}</a>
           </div>  
           {% endfor%}
         </div>
