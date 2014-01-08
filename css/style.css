@@ -1,0 +1,82 @@
+body{
+	background-color: #efefef;
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+#container {
+	background-color: #ffffff;
+	margin: 100px auto;
+	padding: 20px;
+	width: 960px;
+}
+
+#container a {
+	color: #000000;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+header {
+	height: 60px;
+	margin-bottom: 60px;
+}
+
+#site_name {
+	float: left;
+	text-align: center;
+}
+
+#site_name .title {
+	font-family: Georgia;
+	font-size: 36px;
+}
+
+#site_name .slogan {
+	display: block;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
+#main-menu {
+	float: right;
+	list-style: none;
+}
+
+#footer {
+	margin-top: 100px;
+}
+
+#social-links {
+	float: left;
+}
+
+ul.menu {
+	border: none;
+	list-style: none;
+	text-align: left;
+}
+
+#social-links ul li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+#social-links ul li.last {
+	margin-left: 8px;
+}
+
+#copyright {
+	float: right;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
