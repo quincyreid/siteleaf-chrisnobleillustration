@@ -29,8 +29,15 @@
     </header>
 
     <section class="content">
-      <div id="content">{{ body }}</div>
-
+      <div id="content">
+        <div id="Projects">
+          {% for post in site.posts %}
+          <div class="project">
+            <a href="{{post.assets | first }}" title="{{post.title}}">{{post.title}}</a>
+          </div>  
+          {% endfor%}
+        </div>
+      </div>
     </section><!-- /content -->
     <div id="footer" class="clearfix">
       <div id="social-links">
