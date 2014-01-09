@@ -44,6 +44,10 @@ header {
 	list-style: none;
 }
 
+#main-menu li a:hover {
+	text-decoration: line-through;
+}
+
 #footer {
 	margin-top: 100px;
 }
@@ -62,6 +66,10 @@ ul.menu {
 	display: inline;
 	margin: 0;
 	padding: 0;
+}
+
+#social-links ul li a:hover {
+	text-decoration: line-through;
 }
 
 #social-links ul li.last {
