@@ -38,7 +38,7 @@
         <div id="Projects">
           {% for post in site.posts %}
           <div class="project">
-            <a href="{{post.assets | first }}" data-lightbox="{{ post.assets | first.filename }}" title="{{post.title}}">{{post.title}}</a>
+            <a href="{{ post.assets | first }}" data-lightbox="{{ post.body_raw }}" title="{{ post.body_raw }}"><img src="{{ post.assets | first }}" alt="{{post.title}}"></a>
           </div>  
           {% endfor%}
         </div>
