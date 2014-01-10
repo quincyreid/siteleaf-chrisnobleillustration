@@ -6,12 +6,17 @@
   <meta content="width=device-width, initial-scale=1" name="viewport">
   
   <title>{{site.title}} | {{title}}</title>
+ 
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/lightbox-2.6.min.js"></script>
   
   <link rel="alternate" type="application/rss+xml" href="{{site.feed_url}}" />
  
   <link rel="stylesheet" type="text/css" href="css/reset.css" />
   
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/lightbox.css" />
 
 </head>
 <body>
@@ -33,7 +38,7 @@
         <div id="Projects">
           {% for post in site.posts %}
           <div class="project">
-            <a href="{{post.assets | first }}" title="{{post.title}}">{{post.title}}</a>
+            <a href="{{post.assets | first }}" data-lightbox="{{ post.assets | first.filename }}" title="{{post.title}}">{{post.title}}</a>
           </div>  
           {% endfor%}
         </div>
