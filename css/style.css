@@ -39,12 +39,32 @@ header {
 	text-transform: uppercase;
 }
 
+section.content {
+  min-height: 500px;
+	height: auto !important;	
+}
+
+#content {
+	overflow: hidden;
+	margin-left: -26px;
+}
+
 .center-cropped {
 	width: 200px;
 	height: 200px;
+	background-color: #000;
 	background-position: center center;
 	background-repeat: no-repeat;
+	display: block;
+	margin-bottom: 26px;
+	margin-left: 26px;
+	border: 10px solid #000;
+	float: left;
 	overflow: hidden;
+}
+
+.center-cropped:hover {
+	border-color: #666666;
 }
 
 .center-cropped img {
@@ -53,8 +73,8 @@ header {
 	margin-left: -200%;
 	top: 100%;
 	margin-top: -200%;
-/*	min-height: 100%;
-	min-width: 100%; */
+  min-height: 100%;
+	min-width: 100%; 
 }
 
 #main-menu {
