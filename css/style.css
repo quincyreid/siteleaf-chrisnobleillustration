@@ -39,6 +39,24 @@ header {
 	text-transform: uppercase;
 }
 
+.center-cropped {
+	width: 200px;
+	height: 200px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.center-cropped img {
+	position: relative;
+	left: 100%;
+	margin-left: -200%;
+	top: 100%;
+	margin-top: -200%;
+/*	min-height: 100%;
+	min-width: 100%; */
+}
+
 #main-menu {
 	float: right;
 	list-style: none;
