@@ -27,10 +27,10 @@
 
     <header class="clearfix">
       <div id="site_name">
-        <span class="title"><a href="/" class="active">Chris Noble</a></span>
+        <span class="title"><a href="/">Chris Noble</a></span>
         <span class="slogan">Illustration</span>
       </div>
-        <ul id="main-menu" class="links inline clearfix"><li class="menu-203 first last"><a href="mailto:christopher.d.noble@gmail.com?subject=website+contact">Contact</a></li>
+        <ul id="main-menu" class="clearfix"><li><a href="mailto:christopher.d.noble@gmail.com?subject=website+contact">Contact</a></li>
       </ul>
     </header>
 
@@ -39,15 +39,16 @@
         <div id="Projects">
           {% for post in site.posts %}
           <div class="project">
-            <a href="{{ post.assets | first }}" data-lightbox="{{ post.body_raw }}" title="{{ post.body_raw }}"><img src="{{ post.assets | first }}" alt="{{post.title}}"></a>
+            <a href="{{ post.assets | first }}"  data-lightbox="{{ post.body_raw }}" title="{{ post.body_raw }}"><img src="{{ post.assets | first }}" alt="{{post.title}}"></a>
           </div>  
-          {% endfor%}
+          {% endfor %}
         </div>
       </div>
-    </section><!-- /content -->
+    </section>
+    
     <div id="footer" class="clearfix">
       <div id="social-links">
-        <div class="content">
+        <div>
           <ul class="menu">
             <li><a href="https://www.facebook.com/pages/Chris-Noble-Illustration/115288451880692" target=_blank>facebook</a></li>
             <li class="last"><a href="https://twitter.com/CNillustration" target=_blank>twitter</a></li>
